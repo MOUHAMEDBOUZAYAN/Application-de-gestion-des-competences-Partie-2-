@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+
+# OS-related files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Jest coverage output
+coverage/
+
+# Docker
+docker-compose.override.yml
+*.local
+
+# Optional: ignore test snapshots (if used)
+__snapshots__/
+
+# Optional: ignore MongoDB data volume (if persisted locally)
+mongo-data/
