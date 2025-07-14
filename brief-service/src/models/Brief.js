@@ -29,10 +29,10 @@ const briefSchema = new mongoose.Schema({
     enum: ['Débutant', 'Intermédiaire', 'Avancé'],
     required: [true, 'Le niveau est obligatoire']
   },
-  competences: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Competence'
-  }],
+  competences: {
+    type: [String],
+    required: [true, "At least one skill code is required"],
+  },
   ressources: [{
     nom: {
       type: String,
